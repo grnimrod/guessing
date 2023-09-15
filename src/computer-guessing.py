@@ -5,7 +5,7 @@
 def input_selection(prompt: str, options: list[str]) -> str:
     """Get user input, restrict it to fixed options."""
     modified_prompt = "{} [{}]: ".format(
-        prompt.strip(), ", ".join(options)
+        prompt.strip(), ", ".join(options) 
     )
     while True:
         inp = input(modified_prompt)
